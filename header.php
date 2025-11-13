@@ -1,15 +1,15 @@
 <!DOCTYPE html> 
 <html <?php language_attributes(); ?>>
 <head> 
-    <meta charset="utf-8"> 
+    <meta charset="<?php bloginfo('charset'); ?>"> 
     <meta name="description" content=""> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     
     <title><?php bloginfo('name');?></title> 
 
-    <link rel="icon" type="image/x-icon" href="img/Logo.svg"> 
-    <link rel="stylesheet" type="text/css" href="normalize.css"> 
-    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/img/Logo.svg"> 
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/normalize.css"> 
+    <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>"> 
 
     <!--Tailwind CDN--> 
     <script src="https://cdn.tailwindcss.com"></script> 
