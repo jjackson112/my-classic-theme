@@ -1,12 +1,3 @@
-/*
-Theme Name: Dorothy de Long Portfolio
-Theme URI: http://localhost/my-classic-theme
-Author: Jazz
-Description: A portfolio theme showcasing photography and artwork.
-Version: 1.0
-*/
-
-
 <!DOCTYPE html> 
 <html>
 <head> 
@@ -67,7 +58,7 @@ Version: 1.0
             <div class="flex flex-column justify-center p-10"> 
                 <h1 class="text-2xl text-neutral-50">"I capture the realism behind feminism, no filter."</h1> 
             </div> 
-        </header> 
+    </header> 
         
 
 <?php get_footer(); ?>
