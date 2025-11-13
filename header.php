@@ -2,7 +2,7 @@
     <nav class="flex items-center justify-between px-6 py-4 bg-black">
         <div class="flex items-center space-x-3">
             <figure>
-                <a href="<?php echo home_url(); ?>"><img src="img/improved-logo-1.png" alt="logo"></a>
+                <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/improved-logo-1.png" alt="logo"></a>
             </figure>
             <a href="<?php echo home_url(); ?>" class="text-md text-sky-400 font-semibold hover:text-sky-300">Dorothy de Long</a>
         </div>
