@@ -54,4 +54,19 @@
             <?php endif; ?>
         </div>
     </section>
+
+    <!-- Pagination -->
+    <section>
+        <div class="flex justify-center gap-4 m-10 text-xl">
+            <?php   
+                echo paginate_links([
+                    'prev_text' => '← Previous',
+                    'next_text' => 'Next →',
+                    'type' => 'plain',
+                ]);
+            ?>
+        </div>
+    </section>
 </main>
+
+<?php get_footer(); ?>
