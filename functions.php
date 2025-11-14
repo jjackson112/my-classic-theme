@@ -1,3 +1,5 @@
+<!-- Enqueue CSS and register menu if you want an editable menu in WP admin with wp_nav_menu()-->
+
 <?php
     function dorothy_enqueue_styles() {
         // Tailwind CDN
