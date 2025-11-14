@@ -17,27 +17,32 @@ Custom Portfolio Page Template
             </figure>
             <figure class="flex flex-col">
                 <img class="w-full h-64 rounded-lg object-center object-cover transition-transform duration-300 ease-out hover:scale-105" 
-                src="<?php echo get_template_directory_uri(); ?>/img/flex.png">
+                src="<?php echo get_template_directory_uri(); ?>/img/flex.png"
+                alt="woman on a flex machine working out">
                 <figcaption class="mt-4 text-sky-950 text-md leading-tight">Flex<br> Madison, WI.<br> July 24, 2020</figcaption>
             </figure>
             <figure class="flex flex-col">
                 <img class="w-full h-64 rounded-lg object-center object-cover transition-transform duration-300 ease-out hover:scale-105" 
-                src="<?php echo get_template_directory_uri(); ?>/img/moment.png">
+                src="<?php echo get_template_directory_uri(); ?>/img/moment.png"
+                alt="woman on stage performing jumping mid-air">
                 <figcaption class="mt-4 text-sky-950 text-md leading-tight">Moment, FemRockFest<br> Austin, Texas<br> July 17, 2021</figcaption>
             </figure>
             <figure class="flex flex-col">
                 <img class="w-full h-64 rounded-lg object-center object-cover transition-transform duration-300 ease-out hover:scale-105" 
-                src="<?php echo get_template_directory_uri(); ?>/img/flag.png">
+                src="<?php echo get_template_directory_uri(); ?>/img/flag.png"
+                alt="woman with pride flag over her shoulders">
                 <figcaption class="mt-4 text-sky-950 text-md leading-tight">Flag LGBTQIA March<br> in Washington, DC<br> November 12, 2022</figcaption>
             </figure>
             <figure class="flex flex-col">
                 <img class="w-full h-64 rounded-lg object-center object-cover transition-transform duration-300 ease-out hover:scale-105" 
-                src="<?php echo get_template_directory_uri(); ?>/img/father.png">
+                src="<?php echo get_template_directory_uri(); ?>/img/father.png"
+                alt="father with daughter on shoulders at a festival">
                 <figcaption class="mt-4 text-sky-950 text-md leading-tight">Father<br> Denver, Colorado<br> June 25, 2024</figcaption>
             </figure>
             <figure class="flex flex-col">
                 <img class="w-full h-64 rounded-lg object-center object-cover transition-transform duration-300 ease-out hover:scale-105" 
-                src="<?php echo get_template_directory_uri(); ?>/img/haircut.png">
+                src="<?php echo get_template_directory_uri(); ?>/img/haircut.png"
+                alt="male hairstylist doing woman's hair">
                 <figcaption class="mt-4 text-sky-950 text-md leading-tight">Haircut<br> New York City<br> March 31, 2025</figcaption>
             </figure>
         </div>
