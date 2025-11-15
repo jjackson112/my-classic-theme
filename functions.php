@@ -35,3 +35,10 @@
         );
     }
     add_action ( 'init', 'create_custom_post_types' );
+
+// Enqueue Font Awesome icons
+
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+function enqueue_load_fa() {
+    wp_enqueue_style('load-fa', 'https://use.fontawesome.com/releases/7.0.1/css/all.css');
+}
