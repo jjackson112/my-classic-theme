@@ -19,3 +19,19 @@
         );
     }
     add_action('wp_enqueue_scripts', 'dorothy_enqueue_styles');
+
+// Create custom post type
+    function create_custom_post_types() {
+        register_post_type('events',
+        array(
+            'labels' => array(
+                'name' => __( 'Events' );
+                'singular_name' => __( 'Event' )
+            ),
+            'public' => true,
+            'has_archive' => true.
+            'rewrite' => array( 'slug' => 'events' ),
+        )
+        );
+    }
+    add_action ( 'init', 'create_custom_post_types' );
