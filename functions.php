@@ -13,7 +13,7 @@
         // Optional: Your own CSS overrides (should one be added later)
         wp_enqueue_style(
             'custom-style',
-            get_template_director_uri() . 'assets/css/style.css',
+            get_template_directory_uri() . 'assets/css/style.css',
             array(),
             '1.0'
         );
@@ -25,20 +25,20 @@
         register_post_type('events',
         array(
             'labels' => array(
-                'name' => __( 'Events' );
+                'name' => __( 'Events' ),
                 'singular_name' => __( 'Event' )
             ),
             'public' => true,
-            'has_archive' => true.
+            'has_archive' => true,
             'rewrite' => array( 'slug' => 'events' ),
-        )
-        );
+            'supports'    => array('title', 'editor', 'thumbnail'),
+        ));
     }
     add_action ( 'init', 'create_custom_post_types' );
 
 // Enqueue Font Awesome icons
 
-add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
 function enqueue_load_fa() {
     wp_enqueue_style('load-fa', 'https://use.fontawesome.com/releases/7.0.1/css/all.css');
 }
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
