@@ -23,15 +23,20 @@ get_header(); ?>
                     } ?>
                 </div>
 
-                <h4><?php echo $date; ?></h4>
-                <h5><?php echo $time; ?></h5>
+                <?php if ($date) : ?>
+                    <h4 class="text-lg font-medium"><?php echo esc_html($date); ?></h4>
+                <?php endif; ?>
+
+                <?php if ($time) : ?>
+                    <h5 class="text-md text-gray-500"><?php echo esc_html($time); ?></h5>
+                <?php endif; ?>
+
                 
 				<?php the_content(); ?>
                 
-                <p class="hover:text-sky-300 mt-4"><a href="<?php echo ($link) ?>"Click here for more details</a></p>
+                <p class="hover:text-sky-300 mt-4"><a href="<?php echo esc_url($link) ?>"Click here for more details</a></p>
             </div>
-
-			<?php endwhile; ?>
-	        </div>
+        </section>
+		<?php endwhile; ?>
 
 <?php get_footer(); ?>
