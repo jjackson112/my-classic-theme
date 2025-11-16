@@ -41,6 +41,7 @@
                     <li><a class="text-sky-400 hover:text-sky-300 font-semibold p-5" href="<?php echo site_url('/about'); ?>">About</a></li>
                     <li><a class="text-sky-400 hover:text-sky-300 font-semibold p-5" href="<?php echo site_url('/portfolio'); ?>">Portfolio</a></li>
                     <li><a class="text-sky-400 hover:text-sky-300 font-semibold p-5" href="<?php echo site_url('/blog'); ?>">Blog</a></li>
+                    <li><a class="text-sky-400 hover:text-sky-300 font-semibold p-5" href="<?php echo site_url('/events'); ?>">Events</a></li>
                     <li><a class="text-sky-400 hover:text-sky-300 font-semibold p-5" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -56,6 +57,7 @@
                     <li><a class="block py-2 hover:text-sky-300" href="<?php echo site_url('/about'); ?>">About</a></li>
                     <li><a class="block py-2 hover:text-sky-300" href="<?php echo site_url('/portfolio'); ?>">Portfolio</a></li>
                     <li><a class="block py-2 hover:text-sky-300" href="<?php echo site_url('/blog'); ?>">Blog</a></li>
+                    <li><a class="block py-2 hover:text-sky-300" href="<?php echo site_url('/events'); ?>">Events</a></li>
                     <li><a class="block py-2 hover:text-sky-300" href="#contact">Contact</a></li>
                 </ul>
             </div>
