@@ -1,3 +1,8 @@
+<?php 
+/*
+Template Name: Blog */
+?>
+
 <?php get_header(); ?>
 
 <main>
@@ -6,7 +11,7 @@
             <?php 
                 // Dynamic page title depending on WP settings
                 if (is_home()) {
-                    echo 'Latest Posts';
+                    echo 'Learn more about me';
                 } else {
                     the_title();
                 }

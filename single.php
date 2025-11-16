@@ -12,7 +12,7 @@
                     <?php endif; ?>
 
                     <h1 class="text-4xl font-bold mb-4 text-sky-400"><?php the_title(); ?></h1>
-                    <p class="text-gray-500 mb-8"><?php echo get_the_date(); ?></p>
+                    <p class="text-gray-500 mb-8"><i class="fa-regular fa-clock text-sky-950"></i> <?php echo get_the_date(); ?></p>
                     <div class="prose max-w-none">
                         <?php the_content(); ?>
                     </div>
