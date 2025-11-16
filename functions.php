@@ -13,7 +13,7 @@
         // Optional: Your own CSS overrides (should one be added later)
         wp_enqueue_style(
             'custom-style',
-            get_template_directory_uri() . 'assets/css/style.css',
+            get_template_directory_uri() . '/assets/css/style.css',
             array(),
             '1.0'
         );
@@ -25,6 +25,27 @@
         add_theme_support('post-thumbnails');
     }
     add_action('after_setup_theme', 'dorothy_theme_setup');
+
+// override WordPress default with Tailwind styles for images
+    function add_tailwind_classes_to_post_images($content) {
+        
+        $content = preg_replace(
+            '/<img(.*?)class="(.*?)"(.*?)>/',
+            '<img$1class="$2 w-full h-64 object-cover rounded-lg"$3>',
+            $content
+        );
+
+        // If the image does NOT have a class attribute → add Tailwind classes
+        $content = preg_replace(
+            '/<img(?!.*class)(.*?)>/',
+            '<img class="w-full h-64 object-cover rounded-lg"$1>',
+            $content
+        );
+
+        return $content;
+    }
+    add_filter('the_content', 'add_tailwind_classes_to_post_images');
+
 
 // Create custom post type
     function create_custom_post_types() {

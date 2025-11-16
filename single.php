@@ -5,6 +5,14 @@
         <article class="max-w-3xl mx-auto px-6 py-12">
             <?php while (have_posts()) : the_post(); ?>
 
+            <?php if ( has_post_thumbnail() ) : ?>
+                <div class="w-full mb-8">
+                    <?php the_post_thumbnail('large', [
+                    'class' => 'w-full h-80 object-cover rounded-2xl shadow'
+                    ]); ?>
+                </div>
+            <?php endif; ?>
+
                 <h1 class="text-4xl font-bold mb-4 text-sky-400"><?php the_title(); ?></h1>
                 <p class="text-gray-500 mb-8">
                     <i class="fa-regular fa-clock text-sky-950"></i>
