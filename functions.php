@@ -4,8 +4,8 @@
         // Tailwind CDN
         wp_enqueue_script(
             'tailwind',
-            'https://cdn.tailwindcss.com',
-            array(),
+            'https://cdn.tailwindcss.com?plugins=typography',
+            [],
             null,
             false
         );
