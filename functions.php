@@ -20,6 +20,12 @@
     }
     add_action('wp_enqueue_scripts', 'dorothy_enqueue_styles');
 
+// add support for featured images
+    function dorothy_theme_setup() {
+        add_theme_support('post-thumbnails');
+    }
+    add_action('after_setup_theme', 'dorothy_theme_setup');
+
 // Create custom post type
     function create_custom_post_types() {
         register_post_type('events',
@@ -31,7 +37,7 @@
             'public' => true,
             'has_archive' => true,
             'rewrite' => array( 'slug' => 'events' ),
-            'supports'    => array('title', 'editor', 'thumbnail'),
+            'supports'    => array('title', 'editor', 'thumbnail', 'excerpt'),
         ));
     }
     add_action ( 'init', 'create_custom_post_types' );
