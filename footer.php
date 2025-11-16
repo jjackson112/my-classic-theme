@@ -15,7 +15,7 @@
             </div> 
         </div> 
     <div class="flex justify-center text-semibold p-5"> 
-        <p class="text-sky-400">Copyright © <?php echo date('Y'); ?>| Dorothy de Long</p> 
+        <p class="text-sky-400">Copyright © <?php echo date('Y'); ?> | Dorothy de Long</p> 
     </div> 
 </footer> 
     
