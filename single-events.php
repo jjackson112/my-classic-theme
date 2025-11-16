@@ -10,33 +10,35 @@ get_header(); ?>
             $image = get_field('image');
             $date = get_field('date');
             $time = get_field('time');
-            $link = get_field('site_link');
+            $link = get_field('link');
             $size = "full";
         ?>
         
         <section>
-            <div class="mb-4 text-gray-600">
-                <h2 class="text-3xl font-bold text-sky-950 p-10"><?php the_title(); ?></h2>
+            <article class="mb-4 text-gray-600">
                 <div class="flex justify-center">
                     <?php if($image) {
-                        echo wp_get_attachment_image( $image, $size, false, array('class' => 'rounded shadow mb-4') );
+                        echo wp_get_attachment_image( $image, $size, false, array('class' => 'w-full h-80 object-cover rounded-2xl shadow') );
                     } ?>
                 </div>
+                <h2 class="text-3xl font-bold text-sky-950 pt-5 pb-5"><?php the_title(); ?></h2>
 
                 <?php if ($date) : ?>
-                    <h4 class="text-lg font-medium"><?php echo esc_html($date); ?></h4>
+                    <p class="text-lg font-medium"><i class="fa-regular fa-calendar text-sky-950"></i><?php echo esc_html($date); ?></h4>
                 <?php endif; ?>
 
                 <?php if ($time) : ?>
-                    <h5 class="text-md text-gray-500"><?php echo esc_html($time); ?></h5>
+                    <h4 class="text-lg font-medium"><i class="fa-regular fa-clock text-sky-950"></i><?php echo esc_html($time); ?></h4>
                 <?php endif; ?>
 
+				<div class="prose max-w-none mb-5">
+                    <?php the_content(); ?>
+                </div>
                 
-				<?php the_content(); ?>
-                
-                <p class="hover:text-sky-300 mt-4"><a href="<?php echo esc_url($link) ?>"Click here for more details</a></p>
-            </div>
+                <p class="hover:text-sky-300 mt-4"><a target="_blank" rel="noreferrer" href="<?php echo esc_url($link) ?>">Click here for more details</a></p>
+            </article>
+            <?php endwhile; ?>
         </section>
-		<?php endwhile; ?>
+    </div>
 
 <?php get_footer(); ?>
