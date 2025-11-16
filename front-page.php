@@ -1,4 +1,5 @@
-<header class="bg-[url('<?php echo get_template_directory_uri(); ?> /img/smile.png')] bg-cover bg-no-repeat bg-top h-[675px]"> 
+<?php echo "<!-- FRONT PAGE LOADED -->"; ?>
+<header class="bg-[url('<?php echo get_template_directory_uri(); ?>/img/smile.png?v=<?php echo time(); ?>')] bg-cover bg-no-repeat bg-top h-[675px]"> 
     <nav class="flex items-center justify-between px-6 py-4"> 
         <div class="flex items-center space-x-3"> 
             <figure> 
@@ -11,7 +12,7 @@
                 <li><a class="text-sky-400 hover:text-sky-300 font-semibold p-5" href="<?php echo site_url('/about'); ?>">About</a></li> 
                 <li><a class="text-sky-400 hover:text-sky-300 font-semibold p-5" href="<?php echo site_url('/portfolio'); ?>">Portfolio</a></li> 
                 <li><a class="text-sky-400 hover:text-sky-300 font-semibold p-5" href="<?php echo site_url('/blog'); ?>">Blog</a></li> 
-                <li><a class="text-sky-400 hover:text-sky-300 font-semibold p-5" href="contact.html">Contact</a></li> 
+                <li><a class="text-sky-400 hover:text-sky-300 font-semibold p-5" href="#contact">Contact</a></li> 
             </ul> 
         </div> 
         <!-- Mobile Hamburger --> 
