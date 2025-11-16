@@ -1,6 +1,6 @@
 <?php
 /*
-Custom Portfolio Page Template
+Template Name: Portfolio Page
 */
 ?>
 

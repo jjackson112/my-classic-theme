@@ -1,5 +1,7 @@
-<?php echo "<!-- FRONT PAGE LOADED -->"; ?>
-<header class="bg-[url('<?php echo get_template_directory_uri(); ?>/img/smile.png?v=<?php echo time(); ?>')] bg-cover bg-no-repeat bg-top h-[675px]"> 
+<header 
+    style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/smile.png?v=<?php echo time(); ?>');"
+    class="bg-cover bg-no-repeat bg-top h-[675px]"
+    >
     <nav class="flex items-center justify-between px-6 py-4"> 
         <div class="flex items-center space-x-3"> 
             <figure> 
