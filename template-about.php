@@ -10,10 +10,10 @@ Template Name: About Page
     <h2 class="text-3xl font-bold text-sky-950 mb-8"><?php the_title(); ?></h2>
         <div>
             <figure class="flex flex-col items-center gap-4 mb-8">
-                <img src="img/Dorothy-Headshot.png" class="w-60 h-60 rounded-full object-cover shadow-lg">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/Dorothy-Headshot.png" class="w-60 h-60 rounded-full object-cover shadow-lg">
             </figure>
             <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
-                <p class="leading-relaxed md:leading-loose text-sky-900"><?php the_content(); ?></p><br>
+                <p class="leading-relaxed md:leading-loose text-sky-900">My work focuses on candid photographs taken on location at events for women's rights, places where women are owning their space, and fleeting encounters on the streets. My work engulfs the viewer in real moments of strength, vulnerability, and solidarity.</p><br>
                 <p class="font-bold text-sky-900 text-center"> - Dorothy de Long</p>
             </div>
         </div>
