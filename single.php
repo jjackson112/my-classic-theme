@@ -5,13 +5,15 @@
         <article class="max-w-3xl mx-auto px-6 py-12">
             <?php while (have_posts()) : the_post(); ?>
 
-                <?php if (has_post_thumbnail()) : ?>
-                    <img 
-                        src="<?php echo get_the_post_thumbnail_url(null, 'large'); ?>" 
-                        alt="<?php the_title(); ?>" 
-                        class="w-full h-64 object-cover mb-6 rounded-lg"
-                    >
-                <?php endif; ?>
+            <?php if (has_post_thumbnail()): ?>
+                <div class="mb-8">
+                    <figure class="w-full aspect-square overflow-hidden rounded-lg">
+                        <?php the_post_thumbnail('large', [
+                            'class' => 'w-full h-full object-cover'
+                        ]); ?>
+                    </figure>
+                </div>
+            <?php endif; ?>
 
                 <h1 class="text-4xl font-bold mb-4 text-sky-400"><?php the_title(); ?></h1>
                 <p class="text-gray-500 mb-8">

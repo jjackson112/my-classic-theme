@@ -18,13 +18,13 @@ Template Name: Blog */
             ?>
         </h1>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <?php if (have_post()) : ?>
+            <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
 
                     <!-- Blog post card -->
                     <article class="bg-white shadow rounded-lg overflow-hidden">
                     <!-- Featured Image --> 
-                        <?php if (has_post_thumbnails()) : ?>
+                        <?php if (has_post_thumbnail()) : ?>
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail('medium_large', [
                                     'class' => 'w-full h-48 object-cover'
