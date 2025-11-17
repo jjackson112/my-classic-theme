@@ -4,7 +4,7 @@
 
     <h1 class="text-3xl font-bold text-center text-sky-900 mb-10">Events</h1>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pb-8">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
             <article class="bg-white rounded-lg shadow overflow-hidden">

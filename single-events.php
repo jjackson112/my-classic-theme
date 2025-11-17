@@ -15,7 +15,7 @@ get_header(); ?>
         ?>
         
         <section>
-            <article class="mb-4 text-gray-600">
+            <article class="mb-4 text-gray-600 px-6 py-12">
                 <div class="flex justify-center">
                     <?php if($image) {
                         echo wp_get_attachment_image( $image, $size, false, array('class' => 'w-full h-80 object-cover rounded-2xl shadow') );
@@ -31,11 +31,11 @@ get_header(); ?>
                     <h4 class="text-lg font-medium"><i class="fa-regular fa-clock text-sky-950"></i><?php echo esc_html($time); ?></h4>
                 <?php endif; ?>
 
-				<div class="prose max-w-none mb-5">
+				<div class="prose max-w-none pt-5">
                     <?php the_content(); ?>
                 </div>
                 
-                <p class="hover:text-sky-300 mt-4"><a target="_blank" rel="noreferrer" href="<?php echo esc_url($link) ?>">Click here for more details</a></p>
+                <p class="hover:text-sky-300 font-semibold mt-5"><a target="_blank" rel="noreferrer" href="<?php echo esc_url($link) ?>">Click here for more details</a></p>
             </article>
             <?php endwhile; ?>
         </section>
