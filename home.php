@@ -35,10 +35,12 @@ Template Name: Blog */
                         <div class="p-6">
                             <?php 
                                 $categories = get_the_category();
-                                if ($categories) : ?>
-                                    <span class="border border-sky-500 text-sky-500 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">
-                                        <?php echo esc_html($categories[0] -> name); ?>
-                                    </span>
+                                if ($categories) : $cat = categories[0]?>
+                                    <a>
+                                        <span class="border border-sky-500 text-sky-500 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">
+                                            <?php echo esc_html($cat -> name); ?>
+                                        </span>
+                                    </a>
                                 <?php endif; ?>
 
                             <h2 class="text-xl font-semibold mt-2 mb-2">
