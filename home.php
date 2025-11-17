@@ -35,7 +35,7 @@ Template Name: Blog */
                         <div class="p-6">
                             <?php 
                                 $categories = get_the_category();
-                                if ($categories) : $cat = $categories[0]?>
+                                if ($categories) : $cat = $categories[0]; ?>
                                     <a href="<?php echo esc_url(get_category_link($cat->term_id)); ?>"
                                         class="border border-sky-500 text-sky-500 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">
                                         <?php echo esc_html($cat -> name); ?>
