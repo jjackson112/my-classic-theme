@@ -36,12 +36,12 @@ Template Name: Blog */
                             <?php 
                                 $categories = get_the_category();
                                 if ($categories) : ?>
-                                    <span class="border border-red-500 text-red-500 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Pill Badge</span>
+                                    <span class="border border-sky-500 text-sky-500 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">
                                         <?php echo esc_html($categories[0] -> name); ?>
                                     </span>
                                 <?php endif; ?>
 
-                            <h2 class="text-xl font-semibold mb-2">
+                            <h2 class="text-xl font-semibold mt-2 mb-2">
                                 <a href="<?php the_permalink(); ?>" class="hover:text-sky-300">
                                     <?php the_title(); ?>
                                 </a>
