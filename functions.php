@@ -4,15 +4,15 @@
         // Tailwind CDN
         wp_enqueue_script(
             'tailwind',
-            'https://cdn.tailwindcss.com?plugins=typography',
-            [],
+            'https://cdn.tailwindcss.com',
+            array(),
             null,
             false
         );
 
         // Optional: Your own CSS overrides (should one be added later)
         wp_enqueue_style(
-            'custom-style',
+            'dorothy-style',
             get_template_directory_uri() . '/assets/css/style.css',
             array(),
             '1.0'

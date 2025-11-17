@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<section class="px-6 py-12 max-w-6xl mx-auto">
+<section class="max-w-6xl mx-auto px-6 py-12">
 
     <h1 class="text-3xl font-bold text-center text-sky-900 mb-10">
         <?php the_archive_title(); ?>
     </h1>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
             <article class="bg-white p-6 shadow rounded-lg">
