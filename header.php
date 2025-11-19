@@ -26,9 +26,9 @@
     <?php wp_head(); ?> 
 </head> 
 
-<body <?php body_class(); ?>>
+<body class="pb-0 mb-0" <?php body_class(); ?>>
     <header>
-        <nav class="flex items-center justify-between px-6 py-4 bg-black">
+        <nav class="flex items-center justify-between px-6 py-4 bg-black fixed top-0 left-0 w-full z-50 m-0 p-0">
             <div class="flex items-center space-x-3">
                 <figure>
                     <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/improved-logo-1.png" alt="logo"></a>
