@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         // hide fully after animation is over
         setTimeout(() => {
-            mobileMenu.classList.add('hidden');
+            menu.classList.add('hidden');
         }, 300);
     });
 
