@@ -5,3 +5,5 @@ This project is a custom WordPress theme built with:
 - JavaScript
 - Custom archive templates
 - Responsive mobile navigation
+
+Currently live at this link: https://wordpress-classic-theme.onrender.com/
